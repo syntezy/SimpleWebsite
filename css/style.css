@@ -447,4 +447,144 @@ header {
       width: 70%;
       margin-left: 15%; }
 
+/* Brands **********************************************/
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px 0; }
+  .brands .box {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    margin: 30px; }
+    .brands .box img {
+      width: 100%;
+      display: block;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all 0.3s; }
+
+/* Contact **********************************************/
+.contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.2))), url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 120px 0; }
+  .contact .container h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  .contact .container h2 {
+    color: #777777;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 80px; }
+  .contact .container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .contact .container form .data {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 75%; }
+      .contact .container form .data input {
+        padding: 15px;
+        width: 90%;
+        margin: 23px 0;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        color: #bbbbbb;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.35px;
+        transition: all 0.3s; }
+    .contact .container form .message {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+      height: 75%; }
+      .contact .container form .message textarea {
+        padding: 15px;
+        width: 90%;
+        height: 250px;
+        border-radius: 5px;
+        outline: none;
+        color: #bbbbbb;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.35px;
+        resize: none;
+        transition: all 0.3s; }
+    .contact .container form input[type=submit] {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 25px 50px;
+      background: #fed136;
+      border: none;
+      margin-top: 30px; }
+
+/* footer **********************************************/
+footer {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+    margin-top: 5px; }
+    footer ul li a span {
+      color: #ffffff;
+      background: #000000;
+      padding: 12px;
+      font-size: 20px;
+      border-radius: 50%;
+      transition: all 0.3s; }
+
 /*# sourceMappingURL=style.css.map */

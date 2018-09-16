@@ -476,3 +476,132 @@ header {
         }
     }
 }
+
+/* Brands **********************************************/ 
+
+.brands {
+    @include display-flex;
+    @include justify-content-center;
+    @include align-items-center;
+    padding: 60px 0;
+    .box {
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+        margin: 30px;
+        img {
+            width: 100%;
+            display: block;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transition: all 0.3s;
+        }
+    }
+}
+
+/* Contact **********************************************/ 
+
+.contact {
+    background: -webkit-gradient(linear, left top, left bottom, from($gradient-dark-high), to($gradient-dark-low)), url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center center no-repeat;
+    background: linear-gradient($gradient-dark-high, $gradient-dark-low), url(https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0;
+    .container {
+        h1 {
+            color: $white;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        h2 {
+            color: $gray-font;
+            font-family: "Lato";
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 80px;
+        }
+        form {
+            @include display-flex;
+            @include justify-content-center;
+            @include align-items-center;
+            @include flex-wrap-wrap;
+            .data {
+                -ms-flex-preferred-size: 50%;
+                    flex-basis: 50%;
+                @include display-flex;
+                @include flex-direction-column;
+                @include justify-content-center;
+                @include align-items-center;
+                height: 75%;
+                input {
+                    padding: 15px;
+                    width: 90%;
+                    margin: 23px 0;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    color: $form-gray;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: -0.35px;
+                    transition: all 0.3s;
+                }
+            }
+            .message {
+                -ms-flex-preferred-size: 50%;
+                    flex-basis: 50%;
+                    height: 75%;
+                textarea {
+                    padding: 15px;
+                    width: 90%;
+                    height: 250px;
+                    border-radius: 5px;
+                    outline: none;
+                    color: $form-gray;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: -0.35px;
+                    resize: none;
+                    transition: all 0.3s;
+                }
+            }
+            input[type=submit] {
+                color: $white;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 25px 50px;
+                background: $yellow;
+                border: none;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+/* footer **********************************************/ 
+
+footer {
+    padding: 20px 0;
+    @include display-flex;
+    @include justify-content-center;
+    ul {
+        @include display-flex;
+        @include justify-content-space-around;
+        @include align-items-center;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+        margin-top: 5px;    
+        li a span {
+            color: $white;
+            background: $black;
+            padding: 12px;
+            font-size: 20px;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+    }
+}
