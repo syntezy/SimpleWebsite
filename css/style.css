@@ -216,4 +216,147 @@ header {
           font-size: 14px;
           font-style: italic; }
 
+/* About **********************************************/
+.about {
+  padding: 120px 0; }
+  .about h1 {
+    text-align: center;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  .about h2 {
+    text-align: center;
+    color: #777777;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 80px; }
+  .about .boxes .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    position: relative; }
+    .about .boxes .row::before {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 105px;
+      background: rgba(219, 219, 219, 0.603);
+      left: 50%;
+      bottom: -100px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .about .boxes .row .row-text {
+      text-align: right;
+      margin-right: 50px;
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+      margin-left: 149px; }
+      .about .boxes .row .row-text h3 {
+        color: #222222;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.45px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px; }
+      .about .boxes .row .row-text p {
+        color: #777777;
+        font-family: "Lato";
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -0.35px; }
+    .about .boxes .row .row-img {
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
+      .about .boxes .row .row-img img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        border-radius: 50%;
+        border: 6px solid rgba(219, 219, 219, 0.603);
+        -o-object-fit: cover;
+        object-fit: cover; }
+  .about .boxes .row-different {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+    position: relative; }
+    .about .boxes .row-different::before {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 105px;
+      background: rgba(219, 219, 219, 0.603);
+      left: 50%;
+      bottom: -100px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .about .boxes .row-different .row-text {
+      text-align: left;
+      margin-right: 146px;
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+      margin-left: 50px; }
+      .about .boxes .row-different .row-text h3 {
+        color: #222222;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.45px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px; }
+      .about .boxes .row-different .row-text p {
+        color: #777777;
+        font-family: "Lato";
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -0.35px; }
+    .about .boxes .row-different .row-img {
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
+      .about .boxes .row-different .row-img img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        border-radius: 50%;
+        margin-left: 95px;
+        border: 6px solid rgba(219, 219, 219, 0.603);
+        -o-object-fit: cover;
+        object-fit: cover; }
+  .about .row-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 498px;
+    border: 6px solid rgba(219, 219, 219, 0.603);
+    background: #fed136; }
+    .about .row-circle p {
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.45px; }
+
 /*# sourceMappingURL=style.css.map */

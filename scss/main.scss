@@ -243,3 +243,149 @@ header {
     }
 }
 
+/* About **********************************************/ 
+
+.about {
+    padding: 120px 0;
+    h1 {
+        text-align: center;
+        color: $dark-font;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 75px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
+    h2 {
+        text-align: center;
+        color: $gray-font;
+        font-family: "Lato";
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 80px;
+    }
+    .boxes .row {
+        @include display-flex;
+        @include justify-content-flex-start;
+        margin-bottom: 100px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 105px;
+            background: $gray-transparent;
+            left: 50%;
+            bottom: -100px;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+        }   
+        .row-text {
+            text-align: right;
+            margin-right: 50px;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+            margin-left: 149px;
+            h3 {
+                color: $dark-font;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: -0.45px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            p {
+                color: $gray-font;
+                font-family: "Lato";
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: -0.35px;
+            }
+        }
+        .row-img {
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+            img {
+                width: 200px;
+                height: 200px;
+                display: block;
+                border-radius: 50%;
+                border: 6px solid $gray-transparent;
+                @include object-fit-cover;
+            }
+        }
+    }
+    .boxes .row-different {
+        @include display-flex;
+        @include justify-content-flex-end;
+        margin-bottom: 100px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 105px;
+            background: $gray-transparent;
+            left: 50%;
+            bottom: -100px;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+        } 
+        .row-text {
+            text-align: left;
+            margin-right: 146px;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+            margin-left: 50px;
+            h3 {
+                color: $dark-font;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: -0.45px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+            p {
+                color: $gray-font;
+                font-family: "Lato";
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: -0.35px;
+            }
+        }
+        .row-img {
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+            img {
+                width: 200px;
+                height: 200px;
+                display: block;
+                border-radius: 50%;
+                margin-left: 95px;
+                border: 6px solid $gray-transparent;
+                @include object-fit-cover;
+            }
+        }
+    }
+    .row-circle {
+        @include display-flex;
+        @include align-items-center;
+        @include justify-content-center;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: 498px;
+        border: 6px solid $gray-transparent;
+        background: $yellow;
+        p {
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+            color: $white;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.45px;
+        }
+    }
+}
