@@ -1,0 +1,261 @@
+/* Header **********************************************/
+
+@media (max-width: 1265px) {
+    header nav.container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 860px) {
+    header .hero.container .hero-title {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    header nav.container {
+        // position: fixed;
+        // top: 0;
+        .menu {
+            opacity: 0;
+        }
+        .brand {
+            margin-right: 80%;
+        }
+        .hamburger {
+            display: block;
+        }
+        .hamburger.active {
+            .bar {
+                background: rgba(0, 0, 0, 0);
+                &::before {
+                    transform: rotate(45deg) translateY(-21px) translateX(1px);
+                }
+                &::after {
+                    transform: rotate(-45deg) translateY(23px);
+                }
+            }
+        }
+        .menu.active {
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;
+        }
+        .menu-list.active {
+            @include display-flex;
+            @include flex-direction-column;
+            @include justify-content-center;
+            @include align-items-center;
+            width: 98vw;
+            background:rgba(0,0,0,0.8);
+            padding: 20px;
+            transition: all 0.3s;
+        }
+    }
+}    
+
+@media (max-width: 540px) {
+    header {
+        .hero.container .hero-title {
+            h1 {
+                font-size: 15px;
+            }
+            h2 {
+                font-size: 50px;
+            }
+        }  
+        .brand a {
+            margin-left: 50px;
+        }
+    } 
+}
+
+
+/* Services **********************************************/
+
+@media (max-width: 1265px) {
+    .services .boxes {
+        flex-direction: column;
+        .item {
+            margin: 20px 0;
+            p {
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+    }
+}
+
+/* Portfolio **********************************************/
+
+@media (max-width: 1265px) {
+    .portfolio .container .boxes .row {
+        .row-item {
+            min-width: 48%;
+            margin: 5px;
+        }
+    }  
+}
+
+@media (max-width: 860px) {
+    .portfolio .container .boxes .row {
+        margin-bottom: 1px;
+        .row-item {
+            min-width: 70%;
+            margin: 30px auto;
+        }
+    }  
+}
+
+/* About **********************************************/
+@media (max-width: 1265px) {
+    .about.container {
+        .boxes .row {
+            @include flex-direction-column;
+            @include justify-content-center;
+            .row-text {
+                flex-basis: 50%;
+                margin: 0;
+                text-align: center;
+                p {
+                    width: 50%;
+                    margin-left: 25%;
+                }
+            }
+            .row-img {
+                flex-basis: 50%;
+                margin: 0 auto;
+                img {
+                    margin: 25px 0;
+                }
+            }
+            &::before {
+                display: none;
+            }
+        }
+        .row-circle {
+            margin: 0 auto;
+        }
+    }
+    
+    .about.container .boxes .row-different {
+        @include flex-direction-column;
+        @include justify-content-center;
+        .row-text {
+            flex-basis: 50%;
+            margin: 0;
+            text-align: center;
+            order: 1;
+            p {
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+        .row-img {
+            flex-basis: 50%;
+            margin: 0 auto;
+            order: 2;
+            img {
+                margin: 25px 0;
+            }
+        }
+        &::before {
+            display: none;
+        }
+    }
+    
+}
+
+/* Team **********************************************/
+
+@media (max-width: 1265px) {
+    .team .container {
+        p {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 20px;
+        }
+        .boxes {
+            @include flex-wrap-wrap;
+            .item {
+                min-width: 51%;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+/* Brands **********************************************/
+
+@media (max-width: 1265px) {
+    .brands {
+        @include flex-wrap-wrap;
+        .box {
+            min-width: 30%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .brands.container {
+        display: none;
+    }
+}
+
+/* Contact **********************************************/
+
+@media (max-width: 1265px) {
+    .contact .container form {
+        min-width: 80%;
+        .data {
+            min-width: 80%;
+        }
+        .message {
+            min-width: 80%;
+            margin-top: 23px;
+        }
+        input[type=submit] {
+            display: block;
+        }
+    }
+}
+
+// @media (max-width: 380px) {
+//     .contact .container form {
+//         input[type=submit] {
+//             min-width: 75%;
+//         }
+//     }
+// }
+
+/* Footer **********************************************/
+
+@media(max-width: 1080px) {
+    footer ul {
+        min-width: 30%;
+    }
+}
+
+@media(max-width: 700px) {
+    footer ul {
+        min-width: 40%;
+    }
+}
+
+@media(max-width: 500px) {
+    footer ul {
+        min-width: 50%;
+    }
+}
+
+@media(max-width: 380px) {
+    footer ul {
+        min-width: 70%;
+    }
+}
