@@ -389,3 +389,90 @@ header {
         }
     }
 }
+
+/* Team **********************************************/ 
+
+.team {
+    background: $gray;
+    padding: 120px 0;
+    .container {
+        text-align: center;
+        h1 {
+            color: $dark-font;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+        h2 {
+            color: $gray-font;
+            font-family: "Lato";
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 80px;
+        }
+        .boxes {
+            @include display-flex;
+            @include justify-content-center;
+            @include align-items-center;
+            .item {
+                -ms-flex-preferred-size: 33.3334%;
+                    flex-basis: 33.3334%;
+                .item-photo {
+                    @include display-flex;
+                    @include justify-content-center;
+                    img {
+                        display: block;
+                        width: 280px;
+                        height: 280px;
+                        border-radius: 50%;
+                        border: 6px solid $gray-transparent;
+                        @include object-fit-cover;;
+                    }
+                }
+                h3 {
+                    color: $dark-font;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-weight: 700;
+                    letter-spacing: -0.4px;
+                    line-height: 50px;
+                }
+                h4 {
+                    color: $gray-font;
+                    font-family: "Lato";
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: -0.35px;
+                }
+                .item-socials {
+                    ul {
+                        @include display-flex;
+                        @include justify-content-center;
+                        @include align-items-center;
+                        li a span {
+                            padding: 7px;
+                            margin: 10px;
+                            color: $black;
+                            font-size: 23px;
+                            -webkit-box-shadow: 0 0 0 3px $black;
+                            box-shadow: 0 0 0 3px $black;
+                            border-radius: 50%;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            color: $gray-font;
+            font-family: "Lato";
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: -0.4px;
+            margin-top: 80px;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+}

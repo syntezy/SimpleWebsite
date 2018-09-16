@@ -359,4 +359,92 @@ header {
       font-weight: 700;
       letter-spacing: -0.45px; }
 
+/* Team **********************************************/
+.team {
+  background: #f4f4f4;
+  padding: 120px 0; }
+  .team .container {
+    text-align: center; }
+    .team .container h1 {
+      color: #222222;
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -2px; }
+    .team .container h2 {
+      color: #777777;
+      font-family: "Lato";
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 80px; }
+    .team .container .boxes {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .team .container .boxes .item {
+        -ms-flex-preferred-size: 33.3334%;
+        flex-basis: 33.3334%; }
+        .team .container .boxes .item .item-photo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .team .container .boxes .item .item-photo img {
+            display: block;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 6px solid rgba(219, 219, 219, 0.603);
+            -o-object-fit: cover;
+            object-fit: cover; }
+        .team .container .boxes .item h3 {
+          color: #222222;
+          font-size: 16px;
+          font-weight: 700;
+          font-weight: 700;
+          letter-spacing: -0.4px;
+          line-height: 50px; }
+        .team .container .boxes .item h4 {
+          color: #777777;
+          font-family: "Lato";
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: -0.35px; }
+        .team .container .boxes .item .item-socials ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .team .container .boxes .item .item-socials ul li a span {
+            padding: 7px;
+            margin: 10px;
+            color: #000000;
+            font-size: 23px;
+            -webkit-box-shadow: 0 0 0 3px #000000;
+            box-shadow: 0 0 0 3px #000000;
+            border-radius: 50%;
+            transition: all 0.3s; }
+    .team .container p {
+      color: #777777;
+      font-family: "Lato";
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.4px;
+      margin-top: 80px;
+      width: 70%;
+      margin-left: 15%; }
+
 /*# sourceMappingURL=style.css.map */
