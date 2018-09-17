@@ -30,8 +30,8 @@ header .container .menu ul li a {
 
 /* Portfolio **********************************************/
 .portfolio .container .boxes .row .row-item:hover {
-  box-shadow: 1px 1px 4px 2px rgba(219, 219, 219, 0.603);
-  transform: translateY(-2px);
+  box-shadow: 2px 3px 4px 2px rgba(219, 219, 219, 0.603);
+  transform: translateY(-4px);
   cursor: pointer; }
 
 /* Team **********************************************/
