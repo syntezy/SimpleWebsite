@@ -72,7 +72,9 @@ footer ul li a span:hover {
     font-size: 60px; } }
 @media (max-width: 770px) {
   header nav.container .menu {
-    opacity: 0; }
+    opacity: 0;
+    position: absolute;
+    top: -500px; }
   header nav.container .brand {
     margin-right: 80%; }
   header nav.container .hamburger {
