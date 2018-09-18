@@ -1,5 +1,11 @@
 /* Header **********************************************/
 
+@media (min-width: 1350px) {
+    header .hero.container {
+        margin-top: 170px;
+    }
+}
+
 @media (max-width: 1265px) {
     header nav.container {
         flex-direction: column;
@@ -9,10 +15,10 @@
 @media (max-width: 860px) {
     header .hero.container .hero-title {
         h1 {
-            font-size: 25px;
+            font-size: 30px;
         }
         h2 {
-            font-size: 60px;
+            font-size: 63px;
         }
     }
 }
@@ -66,15 +72,28 @@
     header {
         .hero.container .hero-title {
             h1 {
-                font-size: 15px;
+                font-size: 24px;
             }
             h2 {
-                font-size: 50px;
+                font-size: 51px;
             }
         }  
         .brand a {
             margin-left: 50px;
         }
+    } 
+}
+
+@media (max-width: 400px) {
+    header {
+        .hero.container .hero-title {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 46px;
+            }
+        }  
     } 
 }
 

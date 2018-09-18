@@ -1,7 +1,6 @@
 @import 'variables';
 @import 'mixins';
 @import 'hovers';
-@import 'media';
 
 /* Global + reusable + hamburger menu *********************/
 
@@ -110,7 +109,7 @@ header {
     }
     .hero.container {
         text-align: center;
-        margin-top: 170px;
+        margin-top: 100px;
         color: $white;
         .hero-title {
             h1 {
@@ -605,3 +604,5 @@ footer {
         }
     }
 }
+
+@import 'media';
